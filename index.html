@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebScrapper</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+	<div class="container" style="margin-top:200px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+					<div class="container">
+						<h1 class="text-center display-4">WebScrapper</h1>
+						<form class="form-scrap">
+							<label>URL do Site para scrap:</label>
+							<input type="text" class="form-control campo-url" placeholder="Digite a URL..."/>
+							<div class="text-center">
+								<br/>
+								<input type="submit" class="btn btn-success" value="Executar"/>
+							</div>
+						</form>
+	
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="resultados">
+					<div class="loader"></div>
+					<br/>
+					<h2 class="text-center">Dados do Site</h2>
+					<table class="table table-bordered table-responsive">
+						<tr>
+							<th>Título</th>
+							<td class="conteudo-titulo"></td>
+						</tr>
+						<tr>
+							<th>Descrição</th>
+							<td class="conteudo-descricao"></td>
+						</tr>
+						<tr class="lista-links">
+							<td colspan="2">
+															 
+								<button 
+								class="label-links btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#collapselinks" aria-expanded="false" aria-controls="collapselinks">Lista de Links</button>
+								<span class="fst-italic"> Clique para expandir</span>
+								<div id="collapselinks" class="collapse">
+									<table class="table table-bordered table-responsive">
+
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="lista-imagens">
+							<td colspan="2">
+
+								<button class="label-imagens btn btn-primary "  data-bs-toggle="collapse" data-bs-target="#collapseimagens" aria-expanded="false" aria-controls="collapseimagens">Lista de Imagens</button>
+								<span class="fst-italic"> Clique para expandir</span>
+
+								<div id="collapseimagens" class="collapse">
+									<table class="table table-bordered table-responsive">
+
+									</table>	
+								</div>
+							</td>
+						</tr>
+
+
+					</table>
+					<code></code>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
